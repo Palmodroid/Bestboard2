@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="descriptor_directory_default">"bestboard"</string>
+    <string name="descriptor_file_default">fallback.txt</string>
+    <bool name="test_mode_default">false</bool>
+    <string name="test_file_default">""</string>
+
+    <bool name="drawing_hide_upper_default">false</bool>
+    <bool name="drawing_hide_lower_default">false</bool>
+
+    <string name="drawing_height_ratio_default">500</string>
+    <integer name="drawing_height_ratio_min">200</integer>
+    <integer name="drawing_height_ratio_max">800</integer>
+
+    <string name="drawing_landscape_offset_default">300</string>
+    <integer name="drawing_landscape_offset_min">0</integer>
+    <integer name="drawing_landscape_offset_max">1000</integer>
+
+    <string name="drawing_outer_rim_default">300</string>
+    <integer name="drawing_outer_rim_min">200</integer>
+    <integer name="drawing_outer_rim_max">800</integer>
+
+    <bool name="drawing_monitor_row_default">false</bool>
+
+    <string name="drawing_spedometer_limit_default">3000</string>
+    <integer name="drawing_spedometer_limit_min">0</integer>
+    <integer name="drawing_spedometer_limit_max">60000</integer>
+
+    <string name="touch_long_count_default">80</string>
+    <integer name="touch_long_count_min">0</integer>
+    <integer name="touch_long_count_max">1000</integer>
+
+    <string name="touch_press_count_default">3</string>
+    <integer name="touch_press_count_min">0</integer>
+    <integer name="touch_press_count_max">1000</integer>
+
+    <string name="touch_press_threshold_default">1000</string>
+    <integer name="touch_press_threshold_min">0</integer>
+    <integer name="touch_press_threshold_max">10000</integer>
+
+    <string name="touch_stay_time_default">250</string>
+    <integer name="touch_stay_time_min">0</integer>
+    <integer name="touch_stay_time_max">1000</integer>
+
+    <string name="touch_repeat_time_default">150</string>
+    <integer name="touch_repeat_time_min">0</integer>
+    <integer name="touch_repeat_time_max">1000</integer>
+
+    <bool name="cursor_touch_allow_default">true</bool>
+    <bool name="cursor_stroke_allow_key">true</bool>
+    <bool name="cursor_paths_allow_key">false</bool>
+    <bool name="cursor_vibration_allow_key">true</bool>
+
+    <string name="cursor_vibration_first_default">0</string>
+    <integer name="cursor_vibration_first_min">0</integer>
+    <integer name="cursor_vibration_first_max">1000</integer>
+
+    <string name="cursor_vibration_second_default">20</string>
+    <integer name="cursor_vibration_second_min">0</integer>
+    <integer name="cursor_vibration_second_max">1000</integer>
+
+    <string name="cursor_vibration_repeat_default">5</string>
+    <integer name="cursor_vibration_repeat_min">0</integer>
+    <integer name="cursor_vibration_repeat_max">1000</integer>
+
+    <string name="editing_retrieve_text_default">A</string>
+    <string name="editing_store_text_default">A</string>
+
+    <string name="editing_elongation_period_default">100</string>
+    <integer name="editing_elongation_period_min">0</integer>
+    <integer name="editing_elongation_period_max">1000</integer>
+
+    <bool name="editing_text_session_default">true</bool>
+
+    <bool name="debug_default">true</bool>
+    <bool name="debug_grid_title_default">false</bool>
+
+</resources>

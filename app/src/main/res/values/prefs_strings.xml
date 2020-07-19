@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="prefs_range">Valid range:</string>
+
+    <string name="prefs_help">Help</string>
+
+    <string name="help_key">help</string>
+    <string name="help_title">Show help</string>
+    <string name="help_summary">Touch to show help page!</string>
+
+
+    <string name="prefs_descriptor">Descriptor file</string>
+
+    <string name="test_mode_key">testmode</string>
+    <string name="test_mode_title">Use test file instead of main file</string>
+    <string name="test_mode_on">Test file is in use</string>
+    <string name="test_mode_off">Main file is in use</string>
+
+    <string name="descriptor_select_key">selectmain</string>
+    <string name="descriptor_select_title">File selector</string>
+    <string name="descriptor_select_summary">Select descriptor file and working directory</string>
+
+    <string name="descriptor_directory_key">directory</string>
+    <string name="descriptor_directory_title">Name of working directory </string>
+    <string name="descriptor_directory_summary">Working directory: </string>
+    <string name="descriptor_directory_summary_invalid">Working directory cannot be found! </string>
+    <string name="descriptor_directory_dialog_title">Name of working directory</string>
+    <string name="descriptor_directory_dialog_message">Enter name of working directory! Directory should be below external storage directory.</string>
+
+    <string name="descriptor_file_key">coatfile</string>
+    <string name="descriptor_file_title">Name of descriptor file</string>
+    <string name="descriptor_file_summary">Descriptor file: </string>
+    <string name="descriptor_file_summary_invalid">Descriptor file cannot be found! </string>
+    <string name="descriptor_file_dialog_title">Name of descriptor file</string>
+    <string name="descriptor_file_dialog_message">Enter name of descriptor file! File should be in coat format!</string>
+
+    <string name="test_select_key">selecttest</string>
+    <string name="test_select_title">File selector</string>
+    <string name="test_select_summary">Select descriptor file for testing</string>
+
+    <string name="test_file_key">testfile</string>
+    <string name="test_file_title">Name of descriptor test file</string>
+    <string name="test_file_summary">Descriptor test file: </string>
+    <string name="test_file_summary_empty">Descriptor test file is not defined! </string>
+    <string name="test_file_summary_invalid">Descriptor test file cannot be found! </string>
+    <string name="test_file_dialog_title">Name of descriptor test file</string>
+    <string name="test_file_dialog_message">Enter name of descriptor test file! File should be in coat format!</string>
+
+    <string name="descriptor_reload_key">reload</string>
+    <string name="descriptor_reload_title">Force reload of descriptor file</string>
+    <string name="descriptor_reload_summary">Touch to reload and parse descriptor data!</string>
+
+    <string name="descriptor_assets_key">assets</string>
+    <string name="descriptor_assets_title">Force copy of sample files to working directory</string>
+    <string name="descriptor_assets_summary">Touch to copy bundled sample files. All previously changed files will be backed up! </string>
+
+
+    <string name="prefs_drawing">Board layout</string>
+
+    <string name="drawing_hide_upper_key">hideupper</string>
+    <string name="drawing_hide_upper_title">Hide upper part</string>
+    <string name="drawing_hide_upper_on">Upper quarter of the top is hidden</string>
+    <string name="drawing_hide_upper_off">Full size top row can be seen</string>
+
+    <string name="drawing_hide_lower_key">hidelower</string>
+    <string name="drawing_hide_lower_title">Hide lower part</string>
+    <string name="drawing_hide_lower_on">Lower quarter of the top is hidden</string>
+    <string name="drawing_hide_lower_off">Full size bottom row can be seen</string>
+
+    <string name="drawing_height_ratio_key">heightratio</string>
+    <string name="drawing_height_ratio_title">Screen height ratio, which can be occupied by the layout</string>
+    <string name="drawing_height_ratio_summary">Allowed screen height ratio: </string>
+    <string name="drawing_height_ratio_dialog_title">Screen height ratio, which can be occupied by the layout</string>
+    <string name="drawing_height_ratio_dialog_message">Enter screen height ratio (per mille)!</string>
+
+    <string name="drawing_landscape_offset_key">landscapeoffset</string>
+    <string name="drawing_landscape_offset_title">Vertical offset, if non-wide layout is displayed in landscape view</string>
+    <string name="drawing_landscape_offset_summary">Vertical offset in landscape view: </string>
+    <string name="drawing_landscape_offset_dialog_title">Vertical offset, if non-wide layout is displayed in landscape view</string>
+    <string name="drawing_landscape_offset_dialog_message">Enter vertical offset for non-wide boards (per mille)!</string>
+
+    <string name="drawing_outer_rim_key">outerrim</string>
+    <string name="drawing_outer_rim_title">Ratio of buttons\' outer rim </string>
+    <string name="drawing_outer_rim_summary">Outer rim ratio: </string>
+    <string name="drawing_outer_rim_dialog_title">Outer rim ratio </string>
+    <string name="drawing_outer_rim_dialog_message">Enter outer rim ratio (per mille)! The outer rim on the buttons is sensitive to touches but not during touch movements.</string>
+
+    <string name="drawing_monitor_row_key">monitorrow</string>
+    <string name="drawing_monitor_row_title">Monitor row</string>
+    <string name="drawing_monitor_row_on">Monitor row shows measured speed in characters, and in touched buttons per min</string>
+    <string name="drawing_monitor_row_off">Monitor row is switched off</string>
+
+    <string name="drawing_spedometer_clear_key">spedoclear</string>
+    <string name="drawing_spedometer_clear_title">Clears spedometer data</string>
+    <string name="drawing_spedometer_clear_summary">Touch to start a new measurement!</string>
+
+    <string name="drawing_spedometer_limit_key">spedolimit</string>
+    <string name="drawing_spedometer_limit_title">Spedometer limit </string>
+    <string name="drawing_spedometer_limit_summary">Maximal length of period: </string>
+    <string name="drawing_spedometer_limit_dialog_title">Spedometer limit </string>
+    <string name="drawing_spedometer_limit_dialog_message">Enter length of the longest period to measure (in ms)! Events occurring after this period are not included in measurement.</string>
+
+
+    <string name="prefs_touch">Touch fine-tuning</string>
+
+    <string name="touch_long_count_key">longcount</string>
+    <string name="touch_long_count_title">Length of circle </string>
+    <string name="touch_long_count_summary">Length of circle to start secondary button function: </string>
+    <string name="touch_long_count_dialog_title">Length of circle </string>
+    <string name="touch_long_count_dialog_message">Enter length of circular movement. Secondary button function (if available) is triggered if movement on the same button reaches this limit.</string>
+
+    <string name="touch_press_count_key">presscount</string>
+    <string name="touch_press_count_title">Length of hard press </string>
+    <string name="touch_press_count_summary">Length of hard press to start secondary button function: </string>
+    <string name="touch_press_count_dialog_title">Length of hard press </string>
+    <string name="touch_press_count_dialog_message">Enter length of hard press. Secondary button function (if available) is triggered if hard presses on the same button reach this limit. Hard press is not working on all devices! It can be used instead of circular movement.</string>
+
+    <string name="touch_press_threshold_key">pressthreshold</string>
+    <string name="touch_press_threshold_title">Threshold of hard-press force </string>
+    <string name="touch_press_threshold_summary">Limit of hard-press force to increase hard-press counter: </string>
+    <string name="touch_press_threshold_dialog_title">Threshold of hard-press force </string>
+    <string name="touch_press_threshold_dialog_message">Enter limit for threshold of hard-press force! Hard-press is triggered when force of press exceeds this limit. Hard press is not working on all devices!</string>
+
+    <string name="touch_stay_time_key">staytime</string>
+    <string name="touch_stay_time_title">Time of stay </string>
+    <string name="touch_stay_time_summary">Time of stay on the same button to start secondary button function: </string>
+    <string name="touch_stay_time_dialog_title">Time of stay </string>
+    <string name="touch_stay_time_dialog_message">Enter time of stay (in ms)! Secondary button function (if available) is triggered time spent on the button reaches this limit.</string>
+
+    <string name="touch_repeat_time_key">repeattime</string>
+    <string name="touch_repeat_time_title">Time of repeat </string>
+    <string name="touch_repeat_time_summary">Time between two repeats: </string>
+    <string name="touch_repeat_time_dialog_title">Time of repeat </string>
+    <string name="touch_repeat_time_dialog_message">Enter time of repeat (in ms)! Repeat rate can be set with this value. </string>
+
+
+    <string name="prefs_cursor">Visual and tactile feedback</string>
+
+    <string name="cursor_touch_allow_key">touch</string>
+    <string name="cursor_touch_allow_title">Show touched keys</string>
+    <string name="cursor_touch_allow_summary">The color of the touched keys will be changed</string>
+
+    <string name="cursor_touch_color_key">touchcolor</string>
+    <string name="cursor_touch_color_title">Color of touched keys</string>
+    <string name="cursor_touch_color_summary">Enter color for touched keys</string>
+    <string name="cursor_touch_color_dialog_title">Color of touched keys</string>
+    <string name="cursor_touch_color_dialog_message">Color in hexadecimal AARRGGBB format:</string>
+    <string name="cursor_touch_color_default">100</string>
+
+    <string name="cursor_stroke_allow_key">stroke</string>
+    <string name="cursor_stroke_allow_title">Show stroke on keyboard</string>
+    <string name="cursor_stroke_allow_summary">Last stroke will be shown as dots</string>
+
+    <string name="cursor_paths_allow_key">path</string>
+    <string name="cursor_paths_allow_title">Show all strokes on keyboard</string>
+    <string name="cursor_paths_allow_summary">Strokes will be shown as lines</string>
+
+    <string name="cursor_stroke_color_key">strokecolor</string>
+    <string name="cursor_stroke_color_title">Color of the stroke</string>
+    <string name="cursor_stroke_color_summary">Enter color for stroke</string>
+    <string name="cursor_stroke_color_dialog_title">Color of stroke</string>
+    <string name="cursor_stroke_color_dialog_message">Color in hexadecimal AARRGGBB format:</string>
+    <string name="cursor_stroke_color_default">100</string>
+
+    <string name="cursor_vibration_allow_key">vibration</string>
+    <string name="cursor_vibration_allow_title">Vibrate on event</string>
+    <string name="cursor_vibration_allow_summary">Primary touches, secondary events and repeats give tactile feedback</string>
+
+    <string name="cursor_vibration_first_key">vibrationfirst</string>
+    <string name="cursor_vibration_first_title">Vibration on primary events </string>
+    <string name="cursor_vibration_first_summary">Vibration length: </string>
+    <string name="cursor_vibration_first_dialog_title">Vibration on primary events </string>
+    <string name="cursor_vibration_first_dialog_message">Enter length of the vibration period (in ms)! Zero value disables vibration. </string>
+
+    <string name="cursor_vibration_second_key">vibrationsecond</string>
+    <string name="cursor_vibration_second_title">Vibration on secondary events </string>
+    <string name="cursor_vibration_second_summary">Vibration length: </string>
+    <string name="cursor_vibration_second_dialog_title">Vibration on secondary events </string>
+    <string name="cursor_vibration_second_dialog_message">Enter length of the vibration period (in ms)! Zero value disables vibration. </string>
+
+    <string name="cursor_vibration_repeat_key">vibrationrepeat</string>
+    <string name="cursor_vibration_repeat_title">Vibration on repeated events </string>
+    <string name="cursor_vibration_repeat_summary">Vibration length: </string>
+    <string name="cursor_vibration_repeat_dialog_title">Vibration on repeated events </string>
+    <string name="cursor_vibration_repeat_dialog_message">Enter length of the vibration period (in ms)! Zero value disables vibration. </string>
+
+
+    <string name="prefs_editing">Editing control</string>
+
+    <string name="editing_retrieve_text_key">retrievetext</string>
+    <string name="editing_retrieve_text_title">Enable keyboard-editor communication</string>
+    <string name="editing_retrieve_text_summary">Retrieve text property is not set properly.</string>
+    <string name="editing_retrieve_text_automatic">Text retrieval is disabled only if editor-info contains invalid values.</string>
+    <string name="editing_retrieve_text_enabled">Text retrieval is enabled. (Disable, if editor behaves abnormally!)</string>
+    <string name="editing_retrieve_text_disabled">Text retrieval is disabled. Editing functions are limited.</string>
+
+    <string name="editing_store_text_key">storetext</string>
+    <string name="editing_store_text_title">Enable to store text during text-session</string>
+    <string name="editing_store_text_summary">Store text property is not set properly.</string>
+    <string name="editing_store_text_automatic">Text is stored only in simple text (non restricted) fields.</string>
+    <string name="editing_store_text_enabled">Text is always stored during a session. (Disable, if editor behaves abnormally!)</string>
+    <string name="editing_store_text_disabled">Text is never stored. (More accurate, but needs more resources.)</string>
+
+    <string-array name="trileanlistentries">
+        <item>Automatic</item>
+        <item>Enabled</item>
+        <item>Disabled</item>
+    </string-array>
+
+    <string-array name="trileanlistvalues">
+        <item>A</item>
+        <item>E</item>
+        <item>D</item>
+    </string-array>
+
+    <string name="editing_elongation_period_key">elongationperiod</string>
+    <string name="editing_elongation_period_title">Elongation period </string>
+    <string name="editing_elongation_period_summary">No cursor movements detected during the elongation period. Period length after button release: </string>
+    <string name="editing_elongation_period_dialog_title">Elongation period </string>
+    <string name="editing_elongation_period_dialog_message">Enter time of elongation after button release (in ms)! Cursor movements are not checked during this period.</string>
+
+    <string name="editing_text_session_key">textsession</string>
+    <string name="editing_text_session_title">New text session and meta keys</string>
+    <string name="editing_text_session_on">New text session acts like a key-press on meta-states</string>
+    <string name="editing_text_session_off">New text session do not set meta-states</string>
+
+    <string name="prefs_debug">Debug</string>
+
+    <string name="debug_key">debug</string>
+    <string name="debug_title">Enable developer log</string>
+    <string name="debug_summary">Detailed developer log can be enabled for debugging</string>
+
+    <string name="debug_token_key">debugtoken</string>
+    <string name="debug_token_title">Start tokenizer</string>
+    <string name="debug_token_summary">Use only, if You know what is it for!</string>
+
+    <string name="debug_grid_title_key">gridtitle</string>
+    <string name="debug_grid_title_title">Numbers on hexagons</string>
+    <string name="debug_grid_title_summary">Helping column numbers can be displayed on each hexagon. Row is displayed only in the 2nd column.</string>
+
+</resources>

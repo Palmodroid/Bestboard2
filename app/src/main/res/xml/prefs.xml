@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+	<PreferenceCategory
+		android:title="@string/prefs_help">
+
+		<Preference
+			android:key="@string/help_key"
+			android:title="@string/help_title"
+			android:summary="@string/help_summary" />
+
+    </PreferenceCategory>
+
+	<PreferenceCategory
+		android:title="@string/prefs_descriptor">
+
+		<CheckBoxPreference
+			android:key="@string/test_mode_key"
+			android:title="@string/test_mode_title"
+			android:defaultValue="@bool/test_mode_default" />
+
+		<Preference
+			android:key="@string/descriptor_select_key"
+			android:title="@string/descriptor_select_title"
+			android:summary="@string/descriptor_select_summary" />
+
+		<EditTextPreference
+			android:key="@string/descriptor_directory_key"
+			android:title="@string/descriptor_directory_title"
+			android:summary="@string/descriptor_directory_summary_invalid"
+			android:dialogTitle="@string/descriptor_directory_dialog_title"
+			android:dialogMessage="@string/descriptor_directory_dialog_message"
+			android:defaultValue="@string/descriptor_directory_default" />
+
+		<EditTextPreference
+			android:key="@string/descriptor_file_key"
+			android:title="@string/descriptor_file_title"
+			android:summary="@string/descriptor_file_summary_invalid"
+			android:dialogTitle="@string/descriptor_file_dialog_title"
+			android:dialogMessage="@string/descriptor_file_dialog_message"
+			android:defaultValue="@string/descriptor_file_default" />
+
+        <Preference
+            android:key="@string/test_select_key"
+            android:title="@string/test_select_title"
+            android:summary="@string/test_select_summary" />
+
+        <EditTextPreference
+            android:key="@string/test_file_key"
+            android:title="@string/test_file_title"
+            android:summary="@string/test_file_summary_invalid"
+            android:dialogTitle="@string/test_file_dialog_title"
+            android:dialogMessage="@string/test_file_dialog_message"
+            android:defaultValue="@string/test_file_default" />
+
+        <Preference
+			android:key="@string/descriptor_reload_key"
+			android:title="@string/descriptor_reload_title"
+			android:summary="@string/descriptor_reload_summary" />
+
+		<Preference
+			android:key="@string/descriptor_assets_key"
+			android:title="@string/descriptor_assets_title"
+			android:summary="@string/descriptor_assets_summary" />
+
+	</PreferenceCategory>
+
+	<PreferenceCategory
+		android:title="@string/prefs_drawing">
+
+		<CheckBoxPreference
+			android:key="@string/drawing_hide_upper_key"
+			android:title="@string/drawing_hide_upper_title"
+			android:defaultValue="@bool/drawing_hide_upper_default" />
+
+		<CheckBoxPreference
+			android:key="@string/drawing_hide_lower_key"
+			android:title="@string/drawing_hide_lower_title"
+			android:defaultValue="@bool/drawing_hide_lower_default" />
+
+		<EditTextPreference
+			android:key="@string/drawing_height_ratio_key"
+            android:inputType="number"
+			android:title="@string/drawing_height_ratio_title"
+			android:summary="@string/drawing_height_ratio_summary"
+			android:dialogTitle="@string/drawing_height_ratio_dialog_title"
+			android:dialogMessage="@string/drawing_height_ratio_dialog_message"
+			android:defaultValue="@string/drawing_height_ratio_default" />
+
+		<EditTextPreference
+			android:key="@string/drawing_landscape_offset_key"
+            android:inputType="number"
+			android:title="@string/drawing_landscape_offset_title"
+			android:summary="@string/drawing_landscape_offset_summary"
+			android:dialogTitle="@string/drawing_landscape_offset_dialog_title"
+			android:dialogMessage="@string/drawing_landscape_offset_dialog_message"
+			android:defaultValue="@string/drawing_landscape_offset_default" />
+
+		<EditTextPreference
+			android:key="@string/drawing_outer_rim_key"
+            android:inputType="number"
+			android:title="@string/drawing_outer_rim_title"
+			android:summary="@string/drawing_outer_rim_summary"
+			android:dialogTitle="@string/drawing_outer_rim_dialog_title"
+			android:dialogMessage="@string/drawing_outer_rim_dialog_message"
+			android:defaultValue="@string/drawing_outer_rim_default" />
+
+		<CheckBoxPreference
+			android:key="@string/drawing_monitor_row_key"
+			android:title="@string/drawing_monitor_row_title"
+			android:defaultValue="@bool/drawing_monitor_row_default" />
+
+		<Preference
+			android:key="@string/drawing_spedometer_clear_key"
+			android:title="@string/drawing_spedometer_clear_title"
+			android:summary="@string/drawing_spedometer_clear_summary"
+			android:dependency="@string/drawing_monitor_row_key"/>
+
+		<EditTextPreference
+			android:key="@string/drawing_spedometer_limit_key"
+			android:inputType="number"
+			android:title="@string/drawing_spedometer_limit_title"
+			android:summary="@string/drawing_spedometer_limit_summary"
+			android:dialogTitle="@string/drawing_spedometer_limit_dialog_title"
+			android:dialogMessage="@string/drawing_spedometer_limit_dialog_message"
+			android:defaultValue="@string/drawing_spedometer_limit_default"
+			android:dependency="@string/drawing_monitor_row_key"/>
+
+	</PreferenceCategory>
+
+	<PreferenceCategory
+		android:title="@string/prefs_touch">
+
+		<EditTextPreference
+			android:key="@string/touch_long_count_key"
+			android:inputType="number"
+			android:title="@string/touch_long_count_title"
+			android:summary="@string/touch_long_count_summary"
+			android:dialogTitle="@string/touch_long_count_dialog_title"
+			android:dialogMessage="@string/touch_long_count_dialog_message"
+			android:defaultValue="@string/touch_long_count_default" />
+
+		<EditTextPreference
+			android:key="@string/touch_press_count_key"
+			android:inputType="number"
+			android:title="@string/touch_press_count_title"
+			android:summary="@string/touch_press_count_summary"
+			android:dialogTitle="@string/touch_press_count_dialog_title"
+			android:dialogMessage="@string/touch_press_count_dialog_message"
+			android:defaultValue="@string/touch_press_count_default" />
+
+        <EditTextPreference
+            android:key="@string/touch_press_threshold_key"
+            android:inputType="number"
+            android:title="@string/touch_press_threshold_title"
+            android:summary="@string/touch_press_threshold_summary"
+            android:dialogTitle="@string/touch_press_threshold_dialog_title"
+            android:dialogMessage="@string/touch_press_threshold_dialog_message"
+            android:defaultValue="@string/touch_press_threshold_default" />
+
+        <EditTextPreference
+            android:key="@string/touch_stay_time_key"
+            android:inputType="number"
+            android:title="@string/touch_stay_time_title"
+            android:summary="@string/touch_stay_time_summary"
+            android:dialogTitle="@string/touch_stay_time_dialog_title"
+            android:dialogMessage="@string/touch_stay_time_dialog_message"
+            android:defaultValue="@string/touch_stay_time_default" />
+
+        <EditTextPreference
+            android:key="@string/touch_repeat_time_key"
+            android:inputType="number"
+            android:title="@string/touch_repeat_time_title"
+            android:summary="@string/touch_repeat_time_summary"
+            android:dialogTitle="@string/touch_repeat_time_dialog_title"
+            android:dialogMessage="@string/touch_repeat_time_dialog_message"
+            android:defaultValue="@string/touch_repeat_time_default" />
+        
+    </PreferenceCategory>
+
+	<PreferenceCategory
+		android:title="@string/prefs_cursor">
+
+		<CheckBoxPreference
+			android:key="@string/cursor_touch_allow_key"
+			android:title="@string/cursor_touch_allow_title"
+			android:summary="@string/cursor_touch_allow_summary"
+			android:defaultValue="@bool/cursor_touch_allow_default" />
+
+		<!--EditTextPreference
+			android:key="@string/cursor_touch_color_key"
+			android:digits="0123456789abcdefABCDEF"
+			android:maxLength="8"
+			android:dependency="@string/cursor_touch_allow_key"
+			android:title="@string/cursor_touch_color_title"
+			android:summary="@string/cursor_touch_color_summary"
+			android:dialogTitle="@string/cursor_touch_color_dialog_title"
+			android:dialogMessage="@string/cursor_touch_color_dialog_message"
+			android:defaultValue="@string/cursor_touch_color_default" /-->
+
+		<CheckBoxPreference
+			android:key="@string/cursor_stroke_allow_key"
+			android:title="@string/cursor_stroke_allow_title"
+			android:summary="@string/cursor_stroke_allow_summary"
+			android:defaultValue="@bool/cursor_stroke_allow_key" />
+
+		<CheckBoxPreference
+			android:key="@string/cursor_paths_allow_key"
+			android:title="@string/cursor_paths_allow_title"
+			android:summary="@string/cursor_paths_allow_summary"
+			android:defaultValue="@bool/cursor_paths_allow_key" />
+
+		<!--EditTextPreference
+			android:key="@string/cursor_stroke_color_key"
+			android:digits="0123456789abcdefABCDEF"
+			android:inputType="textCapCharacters"
+			android:dependency="@string/cursor_stroke_allow_key"
+			android:title="@string/cursor_stroke_color_title"
+			android:summary="@string/cursor_stroke_color_summary"
+			android:dialogTitle="@string/cursor_stroke_color_dialog_title"
+			android:dialogMessage="@string/cursor_stroke_color_dialog_message"
+			android:defaultValue="@string/cursor_stroke_color_default" /-->
+
+		<CheckBoxPreference
+			android:key="@string/cursor_vibration_allow_key"
+			android:title="@string/cursor_vibration_allow_title"
+			android:summary="@string/cursor_vibration_allow_summary"
+			android:defaultValue="@bool/cursor_vibration_allow_key" />
+
+        <EditTextPreference
+            android:key="@string/cursor_vibration_first_key"
+            android:inputType="number"
+            android:title="@string/cursor_vibration_first_title"
+            android:summary="@string/cursor_vibration_first_summary"
+            android:dialogTitle="@string/cursor_vibration_first_dialog_title"
+            android:dialogMessage="@string/cursor_vibration_first_dialog_message"
+            android:defaultValue="@string/cursor_vibration_first_default"
+            android:dependency="@string/cursor_vibration_allow_key"/>
+
+        <EditTextPreference
+            android:key="@string/cursor_vibration_second_key"
+            android:inputType="number"
+            android:title="@string/cursor_vibration_second_title"
+            android:summary="@string/cursor_vibration_second_summary"
+            android:dialogTitle="@string/cursor_vibration_second_dialog_title"
+            android:dialogMessage="@string/cursor_vibration_second_dialog_message"
+            android:defaultValue="@string/cursor_vibration_second_default"
+            android:dependency="@string/cursor_vibration_allow_key"/>
+
+        <EditTextPreference
+            android:key="@string/cursor_vibration_repeat_key"
+            android:inputType="number"
+            android:title="@string/cursor_vibration_repeat_title"
+            android:summary="@string/cursor_vibration_repeat_summary"
+            android:dialogTitle="@string/cursor_vibration_repeat_dialog_title"
+            android:dialogMessage="@string/cursor_vibration_repeat_dialog_message"
+            android:defaultValue="@string/cursor_vibration_repeat_default"
+            android:dependency="@string/cursor_vibration_allow_key"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/prefs_editing">
+
+        <ListPreference
+			android:key="@string/editing_retrieve_text_key"
+			android:title="@string/editing_retrieve_text_title"
+			android:summary="@string/editing_retrieve_text_summary"
+			android:entries="@array/trileanlistentries"
+			android:entryValues="@array/trileanlistvalues"
+            android:defaultValue="@string/editing_retrieve_text_default"/>
+
+        <ListPreference
+            android:key="@string/editing_store_text_key"
+            android:title="@string/editing_store_text_title"
+            android:summary="@string/editing_store_text_summary"
+            android:entries="@array/trileanlistentries"
+            android:entryValues="@array/trileanlistvalues"
+            android:defaultValue="@string/editing_store_text_default"/>
+
+        <EditTextPreference
+            android:key="@string/editing_elongation_period_key"
+            android:inputType="number"
+            android:title="@string/editing_elongation_period_title"
+            android:summary="@string/editing_elongation_period_summary"
+            android:dialogTitle="@string/editing_elongation_period_dialog_title"
+            android:dialogMessage="@string/editing_elongation_period_dialog_message"
+            android:defaultValue="@string/editing_elongation_period_default" />
+
+		<CheckBoxPreference
+			android:key="@string/editing_text_session_key"
+			android:title="@string/editing_text_session_title"
+			android:defaultValue="@bool/editing_text_session_default" />
+
+	</PreferenceCategory>
+
+	<PreferenceCategory
+		android:title="@string/prefs_debug">
+
+		<CheckBoxPreference
+			android:key="@string/debug_key"
+			android:title="@string/debug_title"
+			android:summary="@string/debug_summary"
+			android:defaultValue="@bool/debug_default" />
+
+		<Preference
+			android:key="@string/debug_token_key"
+			android:title="@string/debug_token_title"
+			android:summary="@string/debug_token_summary" />
+
+		<CheckBoxPreference
+			android:key="@string/debug_grid_title_key"
+			android:title="@string/debug_grid_title_title"
+			android:summary="@string/debug_grid_title_summary"
+			android:defaultValue="@bool/debug_grid_title_default" />
+
+	</PreferenceCategory>
+
+</PreferenceScreen>
